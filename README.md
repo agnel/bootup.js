@@ -86,7 +86,7 @@ There are three callbacks that you can use and are specified in the `options` ob
 		new BootUp(
 			["jquery.js", "backbone.js", "site.js"],
 			{
-				loaded: function(obj, current, maximum) {
+				loaded: function(current, maximum) {
 					document.getElementById("Progress").innerText = current + " of " + maximum + " downloaded...";
 				}
 			}
